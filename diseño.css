@@ -1,0 +1,244 @@
+body {
+  max-width: 1440px;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  background-color: hsl(30, 54%, 90%); 
+}
+.contenedor {
+  max-width: 500px; 
+  width: 90%; 
+  margin: 100px auto; 
+  padding: 30px ;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+}
+
+.imagenDePortada img {
+    width: 100%;  
+    max-width: 700px;  
+    border-radius: 10px;
+    margin: 0 auto ; 
+  }
+ol li::marker {
+    font-size: 12px;
+    font-weight: bold;
+    color: hsl(14, 45%, 36%)
+    
+  }
+.subtitulo_brown {
+  color: hsl(14, 45%, 36%);
+} 
+hr {
+  border: none;
+  height: 1px;
+  background-color: hsl(30, 18%, 87%);
+  margin: 20px 0;
+}
+
+h1, h2{
+  font-family: "Young Serif", serif; 
+  font-weight: 400; 
+  color: hsl(24, 5%, 18%); 
+  margin-bottom: 10px;
+}
+.prepare {
+  padding: 5px;
+  max-width: 500px;
+  height: 120px;
+  font-size: 12px;
+  line-height: 2;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 10px;
+}
+h3 {
+  font-family: "Outfit", serif; 
+  font-weight: 600; 
+  color: hsl(332, 51%, 32%);
+  margin: 5px 5px 5px 20px;
+  padding: 0px;
+}
+.p1 {
+  font-size: 12px;
+  margin-top: 0px;
+  margin-bottom: 30px ;
+}
+.puntos1 li{
+
+  flex-direction: column;
+}
+.puntos1 ::marker{
+  color: hsl(332, 51%, 32%);  
+}
+
+.puntos1 {
+  display: block;
+  text-indent: 10px;
+  margin-top: 0px;
+  font-size: 12px;
+  font-family: "Outfit", sans-serif; 
+  font-weight: 400; 
+  margin:0;
+}
+
+.ul1 {
+  padding-left: 20px;
+}
+
+.ul1 li {
+  padding-left: 15px;
+}
+
+.ul1 ::marker {
+  color: hsl(14, 45%, 36%);
+}
+.puntos2 {
+  line-height: 2;
+  margin-top: 0px;
+  font-size: 12px;
+  font-family: "Outfit", sans-serif; 
+  font-weight: 400; 
+  margin:0;
+}
+.puntosnum {
+  line-height: 1.5;
+  padding-left: 20px;
+  font-size: 12.5px;
+}
+  
+.puntosnum li {
+  padding-left: 15px;
+}
+
+.p2 {
+  font-family: "Outfit", sans-serif; 
+  text-indent: 0;
+  font-size: 12.5px;
+}
+.nutrition {
+  width: 100%;
+}
+
+.nutrition tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  gap: 0px;
+} 
+.nutrition td {
+  padding-right: 20px;
+  font-size: 12px;
+  text-indent: 20px;
+  flex: 1; 
+  
+}
+
+.nutrition tr:not(:last-child) {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.numbers {
+  color : hsl(14, 45%, 36%);
+}
+
+@media (max-width: 375px) {
+  body {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    margin: 0px;
+  }
+
+  .imagenDePortada {
+    overflow: hidden;
+    position: relative; 
+    z-index: 1; 
+    
+  }
+  
+  .imagenDePortada img {
+    width: 375px; 
+    height: 100%;
+    border-radius: 0;
+}
+  
+  .contenedor {
+    
+    width: 375px; 
+    background: white;
+    position: relative;
+    z-index: 2; 
+    border-radius: 0px; 
+    margin: 0px;
+    padding: 0PX;
+  }
+  
+  hr {
+    border: none;
+    width: 330px;
+    height: 1px;
+    background-color: hsl(30, 18%, 87%);
+    margin-left: 20px;
+  }
+
+  h1 ,h2 {
+    font-size: 35px; 
+    padding-left: 20px;
+  }
+  .prepare {
+    width: 80%;
+    margin-left: 20px;
+    height: 210px;
+
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .puntos1 {
+    text-indent: 0px;
+    padding-left: 40px;
+    font-size: 18px;
+  }
+  .puntos1 li{
+    padding-left: 20px;
+  }
+  .puntosnum li::marker{
+    font-size: 18px;
+  }
+  .p1 {
+    padding-left: 20px;
+    font-size: 18px; 
+    padding-right: 20px;
+  }
+  .ul1{
+    padding-left: 40px;
+  }
+  .puntos2{
+    font-size: 18px;
+  }
+  .puntosnum{
+    padding-left: 40px;
+    padding-right: 20px;
+    font-size: 18px;
+  }
+  .p2{
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .nutrition td{
+    padding-right: 0;
+    text-indent: 0px;
+    font-size: 18px;
+  }
+  .nutrition tr{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 30px;
+  }
+  .nutrition tr:not(:last-child) {
+
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+  }
+}
